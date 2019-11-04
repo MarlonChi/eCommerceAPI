@@ -22,7 +22,7 @@ const Usuario = require ('./app/models/usuario');
 
 const porta = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://marlon_chio:@Campinas29@cluster0-2buos.mongodb.net/cliente_service?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://user:@password@cluster0-2buos.mongodb.net/cliente_service?retryWrites=true&w=majority',
 {useCreateIndex: true, useNewUrlParser: true});
 
 app.use(bodyparser.urlencoded({extended: true}));
